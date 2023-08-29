@@ -31,6 +31,10 @@
                 <!-- First ad on the left side -->
                 <iframe src="https://www.highcpmrevenuegate.com/z65x6rbv5h?key=89edba5652f3251c3a4a254422382f1b" width="100%" height="250" frameborder="0" id="ad-left"></iframe>
             </div>
+            <div class="videos" style="background-color: black; border-radius: 15px; transform: translateY(15%);">
+                <p>How to make a sugar cane farm in minecraft</p>
+                <iframe src="SugarCaneFarmTutorial.mp4" width="95%" height="300" frameborder="0" id="ad-left" style="background-color: #ffffff; border-radius: 15px; border-width: 5px; border-style: solid;"></iframe>
+            </div>
         </aside>
     </div>
 
@@ -38,6 +42,7 @@
         const adIframe = document.querySelector('#ad iframe');
 
         function refreshAd() {
+            var adIframe = document.getElementById('ad-left'); 
             adIframe.src = adIframe.src; // Reload the iframe content
         }
 
