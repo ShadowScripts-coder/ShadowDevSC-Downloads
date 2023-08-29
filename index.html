@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <select class="languageSelector" id="languageSelector" onmouseover="this.size=this.length" onmouseout="this.size=1" style="overflow: hidden; outline: none; background: black;">
+        <option class="lang" value="en">English</option>
+        <option class="lang" value="es">Español</option>
+        <option class="lang" value="fr">Français</option>
+    </select>
     <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1626318207450578946/Fjs9XYu0_400x400.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>ShadowDevSc Projects</h1>
-    <a class="twitter" href="https://twitter.com/ShadowDevSc" download>Follow me on X/Twitter</a>
-    <a class="twitter" href="https://www.youtube.com/@shadowlordyt4594/featured" download>Subscribe to my youtube channel</a>
+    <h1 data-translate="scpr">ShadowDevSc Projects</h1>
+    <a data-translate="twitter" class="twitter" href="https://twitter.com/ShadowDevSc" download>Follow me on X/Twitter</a>
+    <a data-translate="youtube" class="youtube" href="https://www.youtube.com/@shadowlordyt4594/about" download>Subscribe to my youtube channel</a>
     <h2>NovaConvert V1.1</h2>
-    
+
     <!-- Predefined download link -->
-    <p>Click below to download the file:</p>
-    <a class="download" href="https://drive.google.com/file/d/1za5D5kab1lqjgRdZ60s64LnSQiF42R6b/view?usp=drive_link" download>Windows Download</a>
+    <p data-translate="download">Click below to download the file:</p>
+    <a data-translate="windows" class="download" href="https://drive.google.com/file/d/1za5D5kab1lqjgRdZ60s64LnSQiF42R6b/view?usp=drive_link" download>Windows Download</a>
     
     <div id="adContainer">
         <!-- Embed your ad here -->
@@ -34,10 +39,49 @@
             adIframe.src = adIframe.src; // Reload the iframe content
         }
 
-        // Refresh every 10 seconds
-        setInterval(refreshAd, 10000);
+        // Refresh every 15 seconds
+        setInterval(refreshAd, 15000);
     </script>
+        <script>
+        const translations = {
+            en: {
+                twitter: 'Follow me on X/Twitter',
+                youtube: 'Subscribe to my youtube channel',
+                scpr: 'ShadowDevSc Projects',
+                download: 'Click below to download the file:',
+                windows: 'Windows Download'
+            },
+            es: {
+                twitter: 'Sígueme en X/Twitter',
+                youtube: 'Suscríbete a mi canal de youtube',
+                scpr: 'Proyectos ShadowDevSc',
+                download: 'Haga clic a continuación para descargar el archivo:',
+                windows: 'Descargar Windows'
+            },
+            fr: {
+                twitter: 'Suivez-moi sur X/Twitter',
+                youtube: 'Abonnez-vous à ma chaîne YouTube',
+                scpr: 'Projets ShadowDevSc',
+                download: 'Cliquez ci-dessous pour télécharger le fichier:',
+                windows: 'Téléchargement de Windows'
+            }
+        };
 
+        function translateContent(targetLanguage) {
+            const elementsToTranslate = document.querySelectorAll('[data-translate]');
+            
+            for (const element of elementsToTranslate) {
+                const translationKey = element.getAttribute('data-translate');
+                const translation = translations[targetLanguage][translationKey];
+                element.textContent = translation;
+            }
+        }
+
+        document.getElementById('languageSelector').addEventListener('change', (event) => {
+            const selectedLanguage = event.target.value;
+            translateContent(selectedLanguage);
+        });
+    </script>
     <style>
         body {
             background-color: #252525;
@@ -71,6 +115,29 @@
         div.ad-content.ad-left {
             transform: translateY(10%);
         }
+
+        select.languageSelector {
+            background-color: black;
+            color: #fff;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        select.languageSelector:hover{
+            background-color: black;
+            color: #fff;
+            border-radius: 15px;
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
     </style>
 </body>
 </html>
