@@ -18,10 +18,10 @@
     <a data-translate="youtube" class="youtube" href="https://www.youtube.com/@shadowlordyt4594/about" download>Subscribe to my youtube channel</a>
     <h2>NovaConvert V1.1</h2>
     <p>NovaConvert is a free to use application where you can download any file from the internet, download youtube audio and video and also change formats of files!</p>
-    <a data-translate="windows" class="download" href="https://drive.google.com/file/d/1za5D5kab1lqjgRdZ60s64LnSQiF42R6b/view?usp=drive_link" download>Windows Download</a>
+    <a data-translate="windows" class="download" href="NovaConvert V1.1.exe" download>Windows Download</a>
     <h2 data-translate="pass">Password generator</h2>
     <a data-translate="go" class="go" href="https://shadowscripts-coder.github.io/passwordgen/" link>Go there!</a>
-    
+
     <div id="adContainer">
         <!-- Embed your ad here -->
         <aside id="ad">
@@ -31,7 +31,7 @@
             </div>
         </aside>
     </div>
-    
+
     <script>
         const adIframe = document.querySelector('#ad iframe');
 
@@ -75,7 +75,7 @@
 
         function translateContent(targetLanguage) {
             const elementsToTranslate = document.querySelectorAll('[data-translate]');
-            
+
             for (const element of elementsToTranslate) {
                 const translationKey = element.getAttribute('data-translate');
                 const translation = translations[targetLanguage][translationKey];
@@ -117,7 +117,7 @@
             display: block;
             margin: 0 auto;
         }
-        
+
         div.ad-content.ad-left {
             transform: translateY(10%);
         }
