@@ -1,25 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="description" content="Explore ShadowDevSc's projects, including NovaConvert V1.1 and a password generator. Download files and find useful tools." />
-    <select class="languageSelector" id="languageSelector" onmouseover="this.size=this.length" onmouseout="this.size=1" style="overflow: hidden; outline: none; background: black; text-align: left; position: absolute; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; right: -0px; top: 0px;">
-        <option class="lang" value="en">English</option>
-        <option class="lang" value="es">Español</option>
-        <option class="lang" value="fr">Français</option>
-        <option class="lang" value="cy">Cymraeg</option>
-    </select>
-    <ul style="text-align: left;">
-        <div class="sites" style="height: 350px; width: 350px; background-color: white; transform: translateY(-260px) translateX(-100px); border-radius: 25px;"></div>
-        <li style="position: absolute; left: -5px; top: 5px;"><a href="passwords.html" style="text-align: left;  border-radius: 5px;" data-translate="pass">Password Generator</a></li>
-        <li style="position: absolute; left: -5px; top: 30px;"><a href="downloads.html" style="text-align: left;  border-radius: 5px;">Downloads</a></li>
-        <li style="position: absolute; left: -5px; top: 55px;"><a href="videos.html" style="text-align: left;  border-radius: 5px;">Videos</a></li>
-    </ul>
-    <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1626318207450578946/Fjs9XYu0_400x400.png" alt="ShadowDevSc Logo">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShadowDevSc Projects - Download Free Software</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
 <body>
 <div class="maincontent">
     <h1 data-translate="scpr">ShadowDevSc Projects</h1>
@@ -38,10 +18,32 @@
             </div>
             <div class="videos" style="background-color: black; border-radius: 15px; transform: translateY(15%);">
                 <p>How to make a sugar cane farm in minecraft</p>
-                <iframe src="SugarCaneFarmTutorial.mp4" width="95%" height="300" frameborder="0" id="ad-left" style="background-color: #ffffff; border-radius: 15px; border-width: 5px; border-style: solid;"></iframe>
+                <video width="95%" height="300"  frameborder="0" style="background-color: #000000; border-radius: 15px; border-width: 5px; border-style: solid;" controls>
+                    <source src="SugarCaneFarmTutorial.mp4" type="video/mp4">
+                </video>
             </div>
         </aside>
     </div>
+</div>
+<div class="menus">
+    <meta name="description" content="Explore ShadowDevSc's projects, including NovaConvert V1.1 and a password generator. Download files and find useful tools." />
+    <select class="languageSelector" id="languageSelector" onmouseover="this.size=this.length" onmouseout="this.size=1" style="overflow: hidden; outline: none; background: black; text-align: left; position: absolute; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; right: -0px; top: 0px;">
+        <option class="lang" value="en">English</option>
+        <option class="lang" value="es">Español</option>
+        <option class="lang" value="fr">Français</option>
+        <option class="lang" value="cy">Cymraeg</option>
+    </select>
+    <ul style="text-align: left;">
+        <div class="sites" style="position: absolute; height: 350px; width: 350px; background-color: white; left: -5%; top: -23%; border-radius: 25px;"></div>
+        <li style="position: absolute; left: -5px; top: 10px;"><a href="passwords.html" style="text-align: left;  border-radius: 5px;" data-translate="pass">Password Generator</a></li>
+        <li style="position: absolute; left: -5px; top: 50px;"><a href="downloads.html" style="text-align: left;  border-radius: 5px;" data-translate="down">Downloads</a></li>
+        <li style="position: absolute; left: -5px; top: 90px;"><a href="videos.html" style="text-align: left;  border-radius: 5px;" data-translate="vids">Videos</a></li>
+    </ul>
+    <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/1626318207450578946/Fjs9XYu0_400x400.png" alt="ShadowDevSc Logo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadowDevSc Projects - Download Free Software</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </div>
     <script>
         const adIframe = document.querySelector('#ad iframe');
@@ -62,7 +64,9 @@
                 scpr: 'ShadowDevSc Projects',
                 windows: 'Windows Download',
                 pass: 'Password generator',
-                ncdesc: 'NovaConvert is a free application where you can download any file from the internet, download audio and video from YouTube and also change file formats!'
+                ncdesc: 'NovaConvert is a free application where you can download any file from the internet, download audio and video from YouTube and also change file formats!',
+                down: 'Downloads',
+                vids: 'Videos'
             },
             es: {
                 twitter: 'Sígueme en X/Twitter',
@@ -70,7 +74,9 @@
                 scpr: 'Proyectos ShadowDevSc',
                 windows: 'Descargar Windows',
                 pass: 'generador de contraseñas',
-                ncdesc: 'NovaConvert es una aplicación gratuita donde puedes descargar cualquier archivo de Internet, descargar audio y video de YouTube y también cambiar formatos de archivo!'
+                ncdesc: 'NovaConvert es una aplicación gratuita donde puedes descargar cualquier archivo de Internet, descargar audio y video de YouTube y también cambiar formatos de archivo!',
+                down: 'Descargas',
+                vids: 'Videos'
             },
             fr: {
                 twitter: 'Suivez-moi sur X/Twitter',
@@ -78,7 +84,9 @@
                 scpr: 'Projets ShadowDevSc',
                 windows: 'Téléchargement de Windows',
                 pass: 'générateur de mot de passe',
-                ncdesc: "NovaConvert est une application gratuite où vous pouvez télécharger n'importe quel fichier depuis Internet, télécharger de l'audio et de la vidéo depuis YouTube et également modifier les formats de fichiers!"
+                ncdesc: "NovaConvert est une application gratuite où vous pouvez télécharger n'importe quel fichier depuis Internet, télécharger de l'audio et de la vidéo depuis YouTube et également modifier les formats de fichiers!",
+                down: 'Téléchargements',
+                vids: 'Vidéos'
             },
             cy: {
                 twitter: 'Dilynwch fi ar X/Twitter',
@@ -86,7 +94,9 @@
                 scpr: 'Prosiectau ShadowDevSc',
                 windows: 'Lawrlwytho i Windows',
                 pass: 'Generadur cyfrinair',
-                ncdesc: "Mae NovaConvert yn meddalwedd am ddim sy'n gadael iddet ti lawrlwytho unrhyw ffeil o'r wê, lawrlwytho sain neu fideos o YouTube a hefyd newid fformat o ffeil!"
+                ncdesc: "Mae NovaConvert yn meddalwedd am ddim sy'n gadael iddet ti lawrlwytho unrhyw ffeil o'r wê, lawrlwytho sain neu fideos o YouTube a hefyd newid fformat o ffeil!",
+                down: 'Lawrlwythiadau',
+                vids: 'Fideos'
             }
         };
 
@@ -110,13 +120,12 @@
             background-color: #252525;
             color: #fff;
             text-align: center;
+            align-content: center;
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
         }
-        div.maincontent {
-            transform: translateY(-350px);
-        }
+        
         a {
             background-color: black;
             color: #fff;
