@@ -8,6 +8,7 @@
     <h2>NovaConvert V1.1</h2>
     <p data-translate="ncdesc">NovaConvert is a free to use application where you can download any file from the internet, download youtube audio and video and also change formats of files!</p>
     <a data-translate="windows" class="download" href="NovaConvert V1.1.exe" download>Windows Download</a>
+    <a data-translate="mac" class="download" href="NovaConvert - Mac (terminal)" download>MacOS Download</a>
 
     <div id="adContainer">
         <!-- Embed your ad here -->
@@ -49,7 +50,7 @@
         const adIframe = document.querySelector('#ad iframe');
 
         function refreshAd() {
-            var adIframe = document.getElementById('ad-left'); 
+            var adIframe = document.getElementById('ad-left');
             adIframe.src = adIframe.src; // Reload the iframe content
         }
 
@@ -63,6 +64,7 @@
                 youtube: 'Subscribe to my youtube channel',
                 scpr: 'ShadowDevSc Projects',
                 windows: 'Windows Download',
+                mac: 'MacOS Download'
                 pass: 'Password generator',
                 ncdesc: 'NovaConvert is a free application where you can download any file from the internet, download audio and video from YouTube and also change file formats!',
                 down: 'Downloads',
@@ -73,6 +75,7 @@
                 youtube: 'Suscríbete a mi canal de youtube',
                 scpr: 'Proyectos ShadowDevSc',
                 windows: 'Descargar Windows',
+                mac: 'Descargar MacOS'
                 pass: 'generador de contraseñas',
                 ncdesc: 'NovaConvert es una aplicación gratuita donde puedes descargar cualquier archivo de Internet, descargar audio y video de YouTube y también cambiar formatos de archivo!',
                 down: 'Descargas',
@@ -83,6 +86,7 @@
                 youtube: 'Abonnez-vous à ma chaîne YouTube',
                 scpr: 'Projets ShadowDevSc',
                 windows: 'Téléchargement de Windows',
+                mac: 'Téléchargement de MacOS'
                 pass: 'générateur de mot de passe',
                 ncdesc: "NovaConvert est une application gratuite où vous pouvez télécharger n'importe quel fichier depuis Internet, télécharger de l'audio et de la vidéo depuis YouTube et également modifier les formats de fichiers!",
                 down: 'Téléchargements',
@@ -93,6 +97,7 @@
                 youtube: 'Tanysgrifwch i fy sianel ar YouTube',
                 scpr: 'Prosiectau ShadowDevSc',
                 windows: 'Lawrlwytho i Windows',
+                mac: 'Lawrlwytho i MacOS'
                 pass: 'Generadur cyfrinair',
                 ncdesc: "Mae NovaConvert yn meddalwedd am ddim sy'n gadael iddet ti lawrlwytho unrhyw ffeil o'r wê, lawrlwytho sain neu fideos o YouTube a hefyd newid fformat o ffeil!",
                 down: 'Lawrlwythiadau',
@@ -125,7 +130,7 @@
             margin: 0;
             padding: 0;
         }
-        
+
         a {
             background-color: black;
             color: #fff;
